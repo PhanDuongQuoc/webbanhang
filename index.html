@@ -74,7 +74,7 @@
         <div class="row-product">
             <div class="col-4">
                 <img src="images/product-one.png" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -96,7 +96,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-2.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -118,7 +118,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-3.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -140,7 +140,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-four.png" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -162,7 +162,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -184,7 +184,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-6.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -206,7 +206,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-7.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -228,7 +228,7 @@
             </div>
             <div class="col-4">
                 <img src="images/product-10.jpg" alt="">
-                <button> BUY NOW </button>
+                <button onclick="buynow() ;return false;"> BUY NOW </button>
                 <h4>Red Polo Collar T-shirt</h4>
                 <div class="rating">
                    <i class="ti-star">
@@ -263,7 +263,7 @@
                 <p class="p-only">Only Avaliable in This Store</p>
                 <h1>Xiaomi Mi Smart band 4</h1>
                 <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. .</small>
-                <div class="button-buy-now">
+                <div onclick="buynow() ;return false;" class="button-buy-now">
                     <a class="btn" href="">Buy Now</a>
                 </div>
             </div>
@@ -383,7 +383,16 @@
         <p>Copyright@2024 - PhanDuongQuoc</p>
     </div>
 </div>
+<script >
+    function buynow()
+    {
+        question=confirm("Bạn muốn mua sản phẩm này?");
+        if(question!=false)
+        {
+            alert('Cảm ơn bạn đã chọn mua sản phẩm');
+        }
+    }
 
-
+</script>
 </body>
 </html>
